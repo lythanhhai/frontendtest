@@ -1,0 +1,63 @@
+.container {
+  width: 80%;
+  min-height: 85%;
+  background-color: rgb(252, 236, 236);
+  margin: 50px 0px;
+  border: 1px solid black;
+}
+
+.container__empty {
+  width: 80%;
+  min-height: 85%;
+  background-color: rgb(253, 253, 253);
+  margin: 50px 0px;
+  
+}
+
+.container__title {
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  height: fit-content;
+  /* background-color: antiquewhite; */
+}
+
+.list__title,
+.graph__text {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.list__prefecture {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 1px;
+}
+
+.list__prefecture-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph__chart {
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .list__prefecture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .list__prefecture {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
